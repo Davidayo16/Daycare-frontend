@@ -6,6 +6,7 @@ const Billing = () => {
   const dispatch = useDispatch();
   const billingDetails = useSelector((state) => state.billingDetails);
   const { loading, error, billing } = billingDetails;
+  console.log(billing)
 
   // const { booksFee, tuitionFee, activityFee, _id: billingId } = billing;
   const billingId = billing?._id;
@@ -34,27 +35,29 @@ const Billing = () => {
 
     try {
       // Fetch the session ID from your server
-      const response = await fetch("/create-checkout-session", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ billingId, booksFee, tuitionFee, activityFee }),
-      });
+      const response = await fetch(
+        "https://daycare-app.onrender.com/create-checkout-session",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            billingId,
+            booksFee,
+            tuitionFee,
+            activityFee,
+          }),
+        }
+      );
 
       const session = await response.json();
 
       // Initialize Stripe
-            console.log(
-              "REACT_APP_STRIPE_KEY:",
-              process.env.REACT_APP_STRIPE_KEY
-            );
-   const stripe = await loadStripe(process.env.REACT_APP_STRIPE_KEY);
-
-   
+      const stripe = await loadStripe(process.env.REACT_APP_STRIPE_KEY);
+   ;
 
       // Redirect to Checkout
-
       const result = await stripe.redirectToCheckout({
         sessionId: session.id,
       });
