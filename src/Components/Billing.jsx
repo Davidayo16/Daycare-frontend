@@ -45,10 +45,16 @@ const Billing = () => {
       const session = await response.json();
 
       // Initialize Stripe
-      const stripe = await loadStripe(process.env.STRIPE_KEY);
-   ;
+            console.log(
+              "REACT_APP_STRIPE_KEY:",
+              process.env.REACT_APP_STRIPE_KEY
+            );
+   const stripe = await loadStripe(process.env.REACT_APP_STRIPE_KEY);
+
+   
 
       // Redirect to Checkout
+
       const result = await stripe.redirectToCheckout({
         sessionId: session.id,
       });

@@ -59,6 +59,7 @@
 }
 .img-cont img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1rem;
   transition: 0.5s ease-in-out;

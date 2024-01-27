@@ -714,7 +714,7 @@ h2 {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  overflow-x: hidden;
+  overflow-x: scroll;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -793,6 +793,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  /* border: 2px solid red; */
 }
 
 .add-field button {
@@ -804,6 +805,18 @@ h2 {
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+@media (max-width:350px) {
+  .add-field{
+    flex-direction: column;
+    width: 100%;
+  }
+  .add-field button {
+ width: 100%;
+}
+.add-field input{
+  width: 100%;
+}
 }
 
 .add-field button:hover {
@@ -973,6 +986,12 @@ h2 {
 /* Example CSS */
 .field-actions {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid rgb(46, 19, 116); */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .select-btn,
@@ -984,8 +1003,16 @@ h2 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 8px;
+
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+}
+.del-btn{
+  color: red;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+
 }
 
 .cancel-btn {
@@ -1001,7 +1028,7 @@ h2 {
 /* Hover styles */
 .select-btn:hover,
 .cancel-btn:hover,
-.delete-btn:hover {
+.delete-btn:hover, .del-btn:hover {
   background-color: #ddd !important; /* Lighter background on hover */
 }
 
@@ -1243,6 +1270,54 @@ font-weight: 700;
 
 
 
+
+.child-table-containerr {
+  overflow-x: auto;
+  max-width: 100%; /* Allow the container to take up the full width of the parent */
+  /* border: 2px solid rgb(76, 0, 255); */
+}
+
+.child-tablee {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.r {
+  overflow-x: scroll;
+}
+.child-tablee th,
+.child-tablee td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  min-width: 130px;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.child-tablee th {
+  background-color: #f2f2f2;
+}
+
+.child-table tr {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.child-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.child-table tr:hover {
+  background-color: #e5f4f4;
+}
+
+/* Animation delay for rows */
+.child-table tr:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.child-table tr:nth-child(even) {
+  animation-delay: 0.2s;
+}
 
 
 

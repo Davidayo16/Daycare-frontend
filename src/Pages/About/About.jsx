@@ -15,10 +15,10 @@ const About = () => {
         <div className="container">
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-lg-6 col-12">
-              <div className="contact-title">
+              <div className="about-title">
                 <h4>Our Mission</h4>
               </div>
-              <div className="contact-content mt-md-0 mt-4">
+              <p className="about-content mt-md-0 mt-4">
                 At NurseryHub, our mission is to create a nurturing and secure
                 environment that promotes holistic child development. We are
                 committed to inspiring a lifelong love for learning through
@@ -32,11 +32,11 @@ const About = () => {
                 education. Ultimately, we aim to instill confidence and
                 readiness in every child, preparing them for a bright and
                 successful future.
-              </div>
+              </p>
             </div>
 
             <div className="col-lg-6 col-12 about-imgg">
-              <img src="/images/about3.jpg" className="img-fluid" alt="" />
+              <img src="/images/l2.jpg" className="img-fluid" alt="" />
             </div>
           </div>
           <div className="mt-5 ">
@@ -44,8 +44,8 @@ const About = () => {
               <h4>Our Services</h4>
             </div>
             <div className="row d-flex justify-content-center align-items-center">
-              <div className="col-lg-6 col-12">
-                <img src="/images/about1.jpg" className="img-fluid" alt="" />
+              <div className="col-lg-6 col-12 about-imgg">
+                <img src="/images/a4.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-lg-6 col-12">
                 <div className="about-content mt-lg-0 mt-4">

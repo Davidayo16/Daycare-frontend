@@ -125,7 +125,7 @@ const ChildAttendance = ({ courses1, course2, errorCourse }) => {
       <h3>{course2?.message}</h3>
       <p>Date: {new Date().toLocaleDateString()}</p>
       
-      <div className="child-tablee-container">
+      <div className="child-table-containerr">
         <table className="course-table">
           <thead>
             <tr>

@@ -2,7 +2,7 @@ import React from "react";
 import { getAttendance } from "../Redux/Actions/AttendanceActions";
 import { useSelector, useDispatch } from "react-redux";
 
-import Loading from './Loading/Loading';
+import Loading from "./Loading/Loading";
 import Error from "./Error/Error";
 
 const AttendanceHistory = () => {
@@ -27,20 +27,24 @@ const AttendanceHistory = () => {
   ];
   const dispatch = useDispatch();
   const attendanceHistory = useSelector((state) => state.attendanceHistory);
-  const { loading: historyLoading, error:historyError, attendance } = attendanceHistory;
+  const {
+    loading: historyLoading,
+    error: historyError,
+    attendance,
+  } = attendanceHistory;
   console.log(attendance);
 
   React.useEffect(() => {
     dispatch(getAttendance());
   }, [dispatch]);
 
-    const getStatusColor = (status) => {
-      return status === "present"
-        ? "#1b5e1b"
-        : status === "confirming"
-        ? "#5297b2"
-        : "red";
-    };
+  const getStatusColor = (status) => {
+    return status === "present"
+      ? "#1b5e1b"
+      : status === "confirming"
+      ? "#5297b2"
+      : "red";
+  };
   return (
     <div className="attendance-history">
       <h2>Child's Attendance History by Course</h2>
@@ -52,7 +56,7 @@ const AttendanceHistory = () => {
         attendance?.attendanceHistory?.map((courseData, index) => (
           <div className="course-attendance" key={index}>
             <h3>{courseData?.courseId?.name?.toUpperCase()}</h3>
-            <div className="child-table-container">
+            <div className="child-table-containerr">
               <table className="attendance-table">
                 <thead>
                   <tr>

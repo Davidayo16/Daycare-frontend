@@ -167,13 +167,21 @@ const Medical = ({ child, initialMedicalInfo }) => {
                     </>
                   )
                 ) : (
-                  <button
-                    onClick={() => handleSelectIndex(index)}
-                    className="select-btn"
-                    disabled={isDeleting}
-                  >
-                    Select for Deletion
-                  </button>
+                  <>
+                    <button
+                      onClick={() => handleSelectIndex(index)}
+                      className="select-btn d-none d-sm-block"
+                      disabled={isDeleting}
+                    >
+                      Select for Deletion
+                    </button>
+                    <span
+                      className="material-symbols-outlined g-icon-delete d-block d-sm-none del-btn"
+                      onClick={() => handleSelectIndex(index)}
+                    >
+                      delete
+                    </span>
+                  </>
                 )}
               </div>
             </li>
