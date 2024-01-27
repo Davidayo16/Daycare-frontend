@@ -36,7 +36,7 @@ const About = () => {
             </div>
 
             <div className="col-lg-6 col-12 about-imgg">
-              <img src="/images/About3.jpg" className="img-fluid" alt="" />
+              <img src="/images/about3.jpg" className="img-fluid" alt="" />
             </div>
           </div>
           <div className="mt-5 ">
@@ -45,7 +45,7 @@ const About = () => {
             </div>
             <div className="row d-flex justify-content-center align-items-center">
               <div className="col-lg-6 col-12">
-                <img src="/images/About1.jpg" className="img-fluid" alt="" />
+                <img src="/images/about1.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-lg-6 col-12">
                 <div className="about-content mt-lg-0 mt-4">
