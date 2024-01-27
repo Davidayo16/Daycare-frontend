@@ -1,0 +1,84 @@
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.i {
+  /* border: 2px solid red; */
+  width: calc(33.33% - 0.67rem); /* Subtracting margin from 50% */
+  margin-bottom: 1rem; /* Margin between rows */
+  box-sizing: border-box; /* Include border in width calculation */
+}
+@media (max-width:992px) {
+  .i {
+  /* border: 2px solid red; */
+  width: calc(50% - 0.67rem); /* Subtracting margin from 50% */
+  margin-bottom: 1rem; /* Margin between rows */
+  box-sizing: border-box; /* Include border in width calculation */
+}
+}
+@media (max-width:572px) {
+  .i {
+  /* border: 2px solid red; */
+  width: 100%; /* Subtracting margin from 50% */
+  margin-bottom: 1rem; /* Margin between rows */
+  box-sizing: border-box; /* Include border in width calculation */
+}
+}
+
+.enroll-btn {
+  padding: 0.6rem 2.8rem;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.enroll-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+.intro-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.intro-text {
+  margin-bottom: 30px;
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  margin-bottom: 15px;
+}
+.enrol-wrapper form {
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.enrol-wrapper form h2 {
+  /* font-style: italic; */
+  font-family: cursive;
+  font-weight: 700;
+}
+/* CSS for disabled button */
+button.enroll-btn[disabled] {
+  opacity: 0.6; /* Reduce opacity for a faded look */
+  cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+  background-color: #cccccc; /* Background color for disabled state */
+  color: #888888; /* Text color for disabled state */
+  border: 1px solid #aaaaaa; /* Border for disabled state */
+  /* You can add additional styling as needed */
+}
+.button-container {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  gap: 1rem;
+}

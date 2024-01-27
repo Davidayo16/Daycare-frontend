@@ -1,0 +1,229 @@
+/* ParentProfile.css */
+
+.parent-profile {
+  /* font-family: Arial, sans-serif; */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease; /* Transition effect for the entire profile */
+
+  /* Box-shadow and hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: scroll;
+}
+.addjob-wrapper {
+  /* border: 2px solid red; */
+  /* background-color:white !important; */
+  min-height: 90vh;
+}
+.parent-profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.parent-profile h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.parent-profile h2 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Add transitions and styling for text content */
+.parent-profile p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 6px;
+  transition: color 0.3s ease; /* Text color transition on hover */
+
+  /* Hover effect on text content */
+  cursor: pointer;
+}
+
+/* Change text color on hover */
+.parent-profile p:hover {
+  color: #333;
+}
+.parent-profile {
+  /* font-family: Arial, sans-serif; */
+  padding: 20px;
+}
+.parent-profile h2 {
+  font-weight: 700;
+}
+.profile-section {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.parent-profile h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.edit-mode input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button,
+.save-button {
+  padding: 0.5rem 2rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: none;
+  background: var(--color-primary);
+  color: white;
+  /* border-radius: 1rem; */
+}
+
+.edit-button:hover,
+.save-button:hover {
+  background-color: rgb(130, 40, 40);
+  /* color: #fff; */
+}
+/* CSS for table styling */
+.child-table-containerr {
+  overflow-x: auto;
+  max-width: 100%; /* Allow the container to take up the full width of the parent */
+  /* border: 2px solid rgb(76, 0, 255); */
+}
+
+.child-tablee {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.r {
+  overflow-x: scroll;
+}
+.child-tablee th,
+.child-tablee td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  min-width: 130px;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.child-tablee th {
+  background-color: #f2f2f2;
+}
+
+.child-table tr {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.child-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.child-table tr:hover {
+  background-color: #e5f4f4;
+}
+
+/* Animation delay for rows */
+.child-table tr:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.child-table tr:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+/* CSS reset for margin and padding */
+
+.edit-mode {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-group {
+  width: calc(50% - 10px); /* Each item takes 50% width with some spacing */
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+.input-field:hover {
+  border-color: #007bff;
+}
+
+.label-float {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-field:not(:placeholder-shown) + label,
+.input-field:focus + label {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-field:focus + label,
+.input-field:hover + label {
+  color: #007bff;
+}
+
+input[type="text"],
+input[type="email"] {
+  color: #333;
+}
+
+.admitted {
+  color: green;
+}
+
+.processing {
+  color: rgb(167, 160, 32);
+}
+.declined {
+  color: red;
+}

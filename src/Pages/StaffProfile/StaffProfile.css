@@ -1,0 +1,155 @@
+.wid input {
+  background-color: #e9edf0;
+}
+.wid select {
+  background-color: #e9edf0;
+}
+.staff-profile {
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease; /* Transition effect for the entire profile */
+
+  /* Box-shadow and hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.staff-cont {
+  background-color: rgb(238, 238, 238);
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+.st h2 {
+
+  font-weight: bolder;
+}
+.child-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.child-table th,
+.child-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.child-table th {
+  background-color: #f2f2f2;
+}
+
+/* CSS for animations/transitions */
+.child-table tr {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.child-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.child-table tr:hover {
+  background-color: #e5f4f4;
+}
+
+/* Add animation when table row enters the viewport */
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.child-table tr {
+  animation: fadeInRow 0.5s ease-in-out forwards;
+}
+
+/* Animation delay for rows */
+.child-table tr:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.child-table tr:nth-child(even) {
+  animation-delay: 0.2s;
+}
+/* StaffProfile.css */
+
+.staff-profile {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.staff-profile:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.staff-profile h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width:776px) {
+  .profile-details {
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 20px;
+}
+}
+
+.profile-details label {
+  font-weight: bold;
+  color: #555;
+}
+
+.profile-details input,
+.profile-details select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.profile-details input:focus,
+.profile-details select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.update-profile-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-profile-btn:hover {
+  background-color: #0056b3;
+}

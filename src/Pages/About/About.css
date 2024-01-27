@@ -1,0 +1,74 @@
+.contact-wrapper {
+  /* font-family: Arial, sans-serif; */
+}
+
+.about-banner {
+  position: relative;
+  height: 40vh;
+  background-image: url("/a4.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-banner::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.about-banner h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+.about-banner p {
+  color: rgb(238, 238, 238);
+  font-size: 1rem;
+}
+/* Apply transition to all properties for smooth changes */
+.op {
+  transition: all 0.3s ease;
+}
+
+/* Define initial styles */
+.op:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  
+}
+.contact-content{
+  /* border: 2px solid red; */
+}
+
+/* Add animation effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.op {
+  animation: fadeIn 1s ease-in-out; /* Apply the animation */
+}
+
+.about-imgg{
+    border-radius: 50% 20% 40% 30% / 30% 60% 40% 20%;
+}
+
+.about-imgg img{
+    border-radius: 50% 30% 40% 30% / 30% 60% 40% 20%;
+}

@@ -1,0 +1,141 @@
+/* Basic styling for the allergies list */
+.allergies-list {
+ 
+
+  max-width: 400px;
+  /* margin: 0 auto; */
+}
+
+.allergies-list h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.allergies-list ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.allergies-list li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.allergies-list li:before {
+  content: "\2022"; /* Bullet point character */
+  color: #ff6347; /* Change bullet point color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.child-profile{
+  /* font-family: Arial, sans-serif; */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease; /* Transition effect for the entire profile */
+
+  /* Box-shadow and hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ChildProfile.css */
+
+.personal-profile {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+    overflow-x: auto;
+}
+
+.personal-profile:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.personal-profile h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+@media (max-width:776px) {
+  .profile-details {
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 20px;
+}
+}
+.profile-details label {
+  font-weight: bold;
+  color: #555;
+}
+
+.profile-details input,
+.profile-details select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.profile-details input:focus,
+.profile-details select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.profile-details input[type="date"]:hover,
+.profile-details input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.update-profile-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-profile-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+.profile-details input:focus,
+.profile-details select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary);;
+}
+
+button[disabled] {
+  opacity: 0.6; /* Reduce opacity for a faded look */
+  cursor: not-allowed; /* Change cursor to not-allowed when disabled */
+  background-color: #cccccc; /* Background color for disabled state */
+  color: #888888; /* Text color for disabled state */
+  border: 1px solid #aaaaaa; /* Border for disabled state */
+  /* You can add additional styling as needed */
+}
