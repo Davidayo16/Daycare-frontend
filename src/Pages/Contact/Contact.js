@@ -141,7 +141,7 @@ const Contact = () => {
               <div>
                 <div className="d-flex gap-3 im">
                   {/* <div className='contact-profile-img'> */}
-                  <img src="/images/o1.JPG" className="img-fluid" alt="" />
+                  <img src="/images/o1.jpg" className="img-fluid" alt="" />
                   {/* </div> */}
                   <div className="contact-name">
                     <h3>Efetobor Justice</h3>
@@ -152,7 +152,7 @@ const Contact = () => {
                 </div>
                 <div className="d-flex gap-3 im">
                   {/* <div className='contact-profile-img'> */}
-                  <img src="/images/p2.JPG" className="img-fluid" alt="" />
+                  <img src="/images/p2.jpg" className="img-fluid" alt="" />
                   {/* </div> */}
                   <div className="contact-name">
                     <h3>Flora Shaw</h3>
@@ -163,7 +163,7 @@ const Contact = () => {
                 </div>
                 <div className="d-flex gap-3 im">
                   {/* <div className='contact-profile-img'> */}
-                  <img src="/images/p3.JPG" className="img-fluid" alt="" />
+                  <img src="/images/p3.jpg" className="img-fluid" alt="" />
                   {/* </div> */}
                   <div className="contact-name">
                     <h3>John Doe</h3>

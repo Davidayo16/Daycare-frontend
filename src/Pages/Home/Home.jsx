@@ -11,19 +11,19 @@ import "lazysizes/plugins/parent-fit/ls.parent-fit";
 const slides = [
   {
     id: 1,
-    imageUrl: "/images/hero1.JPG",
+    imageUrl: "/images/hero1.jpg",
     title: "Special Child Session",
     description: "For Brain Growth",
   },
   {
     id: 2,
-    imageUrl: "/images/hero2.JPG",
+    imageUrl: "/images/hero2.jpg",
     title: "Best Children Study",
     description: "And Future Care",
   },
   {
     id: 3,
-    imageUrl: "/images/hero3.JPG",
+    imageUrl: "/images/hero3.jpg",
     title: "We Prepare Your",
     description: "Child For Life",
   },
@@ -140,28 +140,28 @@ const Home = () => {
                 <div className="col-sm-6 col-6 re">
                   <img
                     className="img-fluid lazyload"
-                    data-src="/images/a1.JPG"
+                    data-src="/images/a1.jpg"
                     alt="imageA3"
                   />
                 </div>
                 <div className="col-sm-6 col-6 re">
                   <img
                     className="img-fluid lazyload"
-                    data-src="/images/a2.JPG"
+                    data-src="/images/a2.jpg"
                     alt="imageA2"
                   />
                 </div>
                 <div className="col-sm-6 col-6 mt-3 re">
                   <img
                     className="img-fluid lazyload"
-                    data-src="/images/a3.JPG"
+                    data-src="/images/a3.jpg"
                     alt=""
                   />
                 </div>
                 <div className="col-sm-6 col-6 mt-3 re">
                   <img
                     className="img-fluid lazyload"
-                    data-src="/images/a4.JPG"
+                    data-src="/images/a4.jpg"
                     alt=""
                   />
                 </div>
@@ -318,7 +318,7 @@ const Home = () => {
         <div className="d-flex flex-column flex-lg-row container-xxl align-items-center mt-5 ">
           <img
             className="img-fluid faq-img w-100 lazyload"
-            data-src="/images/v1.JPG"
+            data-src="/images/v1.jpg"
             alt=""
           />
           <FAQ />
@@ -328,7 +328,7 @@ const Home = () => {
 
           <img
             className="img-fluid ii  lazyload"
-            data-src="/images/e.PNG"
+            data-src="/images/e.png"
             alt=""
           />
         </div>
@@ -792,7 +792,7 @@ const Home = () => {
                 <div className="d-flex gap-3 t align-items-center ">
                   <img
                     className="img-fluid  director-img"
-                    src="/images/o1.JPG"
+                    src="/images/o1.jpg"
                     alt=""
                   />
                   <div>

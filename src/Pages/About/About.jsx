@@ -36,7 +36,7 @@ const About = () => {
             </div>
 
             <div className="col-lg-6 col-12 about-imgg">
-              <img src="/images/About2.JPG" className="img-fluid" alt="" />
+              <img src="/images/About3.jpg" className="img-fluid" alt="" />
             </div>
           </div>
           <div className="mt-5 ">
@@ -72,7 +72,7 @@ const About = () => {
               <div className="col-md-4 col-sm-6 col-12 op mt-3 ">
                 <div className="x">
                   <div className="x-item mb-3">
-                    <img className="img-fluid" src="/images/o1.JPG" alt="" />
+                    <img className="img-fluid" src="/images/o1.jpg" alt="" />
                   </div>
                   <h4>Justice Efetobor</h4>
                   <b>Director, NurseryHub</b>
@@ -86,7 +86,7 @@ const About = () => {
               <div className="col-md-4 col-sm-6 col-12 op mt-3 ">
                 <div className="x x1">
                   <div className="x-item x-item-1 mb-3">
-                    <img className="img-fluid" src="/images/p2.JPG" alt="" />
+                    <img className="img-fluid" src="/images/p2.jpg" alt="" />
                   </div>
                   <h4>Flora shaw</h4>
                   <b>Principal, NurseryHub</b>
@@ -100,7 +100,7 @@ const About = () => {
               <div className="col-md-4 col-sm-6 col-12 op mt-3 ">
                 <div className="x">
                   <div className="x-item x-item-2 mb-3">
-                    <img className="img-fluid" src="/images/p3.JPG" alt="" />
+                    <img className="img-fluid" src="/images/p3.jpg" alt="" />
                   </div>
                   <h4>John Doe</h4>
                   <p>
@@ -113,7 +113,7 @@ const About = () => {
               <div className="col-md-4 col-sm-6 col-12 op mt-3 ">
                 <div className="x">
                   <div className="x-item mb-3">
-                    <img className="img-fluid" src="/images/p4.JPG" alt="" />
+                    <img className="img-fluid" src="/images/p4.jpg" alt="" />
                   </div>
                   <h4>David James</h4>
                   <p>
@@ -126,7 +126,7 @@ const About = () => {
               <div className="col-md-4 col-sm-6 col-12 op mt-3 ">
                 <div className="x x1">
                   <div className="x-item x-item-1 mb-3">
-                    <img className="img-fluid" src="/images/p5.JPG" alt="" />
+                    <img className="img-fluid" src="/images/p5.jpg" alt="" />
                   </div>
                   <h4>Michelle Grace</h4>
                   <p>
@@ -139,7 +139,7 @@ const About = () => {
               <div className="col-md-4 col-sm-6 col-12 op mt-3 ">
                 <div className="x">
                   <div className="x-item x-item-2 mb-3">
-                    <img className="img-fluid" src="/images/p6.JPG" alt="" />
+                    <img className="img-fluid" src="/images/p6.jpg" alt="" />
                   </div>
                   <h4>Mary Jane</h4>
                   <p>
