@@ -59,7 +59,7 @@ export const parentLog = (email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.post(
+    const { data } = await api.post(
       "/api/users/parent-login",
       { email, password },
       config
@@ -278,7 +278,7 @@ export const childLog = (email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.post(
+    const { data } = await api.post(
       "/api/users/child-login",
       { email, password },
       config
@@ -413,7 +413,7 @@ export const staffLog = (email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.post(
+    const { data } = await api.post(
       "/api/users/staff-login",
       { email, password },
       config
