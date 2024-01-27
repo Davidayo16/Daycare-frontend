@@ -36,7 +36,7 @@ const Billing = () => {
     try {
       // Fetch the session ID from your server
       const response = await fetch(
-        "https://daycare-app.onrender.com/create-checkout-session",
+        "/create-checkout-session",
         {
           method: "POST",
           headers: {
