@@ -46,14 +46,13 @@ const Billing = () => {
           activityFee,
         }),
       });
-
+      console.log(response);
       const session = await response.json();
 
-      // Initialize Stripe
-      const stripe = await loadStripe(
-        "pk_test_51NB3WiB17OYoDIw6XlAcmPauHtnFObQeVyksy0KAkJKWceuWvq3psH2RFFyFffdygOZ5FLwag5QQ9KI4K1EXQf3H001D8GLjDs"
-      );
+   
 
+      // Initialize Stripe
+      const stripe = await loadStripe(process.env.REACT_APP_STRIPE_KEY);
       // Redirect to Checkout
       const result = await stripe.redirectToCheckout({
         sessionId: session.id,
