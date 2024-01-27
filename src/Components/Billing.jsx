@@ -6,7 +6,7 @@ const Billing = () => {
   const dispatch = useDispatch();
   const billingDetails = useSelector((state) => state.billingDetails);
   const { loading, error, billing } = billingDetails;
-  console.log(billing)
+  console.log(billing);
 
   // const { booksFee, tuitionFee, activityFee, _id: billingId } = billing;
   const billingId = billing?._id;
@@ -15,10 +15,9 @@ const Billing = () => {
   const activityFee = billing?.activityFee;
   const [loadingPayment, setLoadingPayment] = useState(false);
 
-
-    const childLogin = useSelector((state) => state.childLogin);
-    const { childInfo } = childLogin;
-    console.log("USER INFO", childInfo);
+  const childLogin = useSelector((state) => state.childLogin);
+  const { childInfo } = childLogin;
+  console.log("USER INFO", childInfo);
   useEffect(() => {
     dispatch(getBilling(childInfo?._id));
   }, [dispatch]);
@@ -35,21 +34,18 @@ const Billing = () => {
 
     try {
       // Fetch the session ID from your server
-      const response = await fetch(
-        "/create-checkout-session",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            billingId,
-            booksFee,
-            tuitionFee,
-            activityFee,
-          }),
-        }
-      );
+      const response = await fetch("/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          billingId,
+          booksFee,
+          tuitionFee,
+          activityFee,
+        }),
+      });
 
       const session = await response.json();
 
@@ -57,7 +53,6 @@ const Billing = () => {
       const stripe = await loadStripe(
         "pk_test_51NB3WiB17OYoDIw6XlAcmPauHtnFObQeVyksy0KAkJKWceuWvq3psH2RFFyFffdygOZ5FLwag5QQ9KI4K1EXQf3H001D8GLjDs"
       );
-   ;
 
       // Redirect to Checkout
       const result = await stripe.redirectToCheckout({
