@@ -806,7 +806,7 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-@media (max-width:350px) {
+@media (max-width:390px) {
   .add-field{
     flex-direction: column;
     width: 100%;
