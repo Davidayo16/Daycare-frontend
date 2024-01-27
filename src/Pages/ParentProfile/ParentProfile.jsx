@@ -490,7 +490,7 @@ const ParentProfile = () => {
                           <td>{billing?.child?.email}</td>
                           <td>{billing?.child?.country}</td>
                           <td>{billing?.child?.state}</td>
-                          <td>{billing.child.city}</td>
+                          <td>{billing?.child?.city}</td>
 
                           <td>{billing.session}</td>
                         </tr>
@@ -518,9 +518,9 @@ const ParentProfile = () => {
                     {billingHistoryData?.map((billing) => {
                       console.log("BILLING", billing?.tuitionFee);
                       const amount =
-                        billing.tuitionFee +
-                        billing.booksFee +
-                        billing.activityFee;
+                        billing?.tuitionFee +
+                        billing?.booksFee +
+                        billing?.activityFee;
                       return (
                         <tr
                           key={billing._id}
@@ -536,8 +536,8 @@ const ParentProfile = () => {
                             {billing?.child?.lastName}
                           </td>
                           <td>${amount}</td>
-                          <td>{billing.session}</td>
-                          <td>{billing.isPaid ? "Paid" : "Not Paid"}</td>
+                          <td>{billing?.session}</td>
+                          <td>{billing?.isPaid ? "Paid" : "Not Paid"}</td>
                         </tr>
                       );
                     })}
