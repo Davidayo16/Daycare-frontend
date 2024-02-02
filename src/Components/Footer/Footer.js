@@ -47,8 +47,8 @@ const Footer = () => {
             <div className="col-md-3 col-12">
               <h2 className="mb-3">Resources</h2>
               <p>FAQS</p>
-              <p>Downloas</p>
-              <p>Polocies</p>
+              <p>Downloads</p>
+              <p>Policies</p>
               <p>Guidlines</p>
             </div>
           </div>
